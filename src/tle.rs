@@ -104,7 +104,7 @@ pub struct Tle {
     classification: char,
     /// International designator
     international_designator: String,
-    /// TLE epoch as DateTime<Utc>
+    /// TLE epoch as `DateTime<Utc>`
     epoch: DateTime<Utc>,
     /// First derivative of mean motion (rev/day²)
     mean_motion_dot: f64,

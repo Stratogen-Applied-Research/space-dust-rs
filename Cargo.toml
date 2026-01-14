@@ -2,11 +2,31 @@
 name = "space-dust"
 version = "0.1.0"
 edition = "2021"
-description = "A comprehensive astrodynamics library for Rust"
+rust-version = "1.70"
+description = "A comprehensive astrodynamics library for satellite tracking, orbital mechanics, coordinate transformations, and celestial calculations"
 license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Stratogen-Applied-Research/space_dust"
 repository = "https://github.com/Stratogen-Applied-Research/space_dust"
+documentation = "https://docs.rs/space-dust"
 keywords = ["astrodynamics", "satellite", "orbital-mechanics", "sgp4", "tle"]
-categories = ["science", "aerospace"]
+categories = ["science", "aerospace", "simulation"]
+authors = ["Stratogen Applied Research <contact@stratogen.com>"]
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "Cargo.toml",
+    "LICENSE",
+    "README.md",
+    "CHANGELOG.md",
+]
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+[package.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
 
 [dependencies]
 sgp4 = "2.3.0"

@@ -701,23 +701,23 @@ impl TimeTransforms {
     // DateTime conversions
     // ========================================================================
 
-    /// Convert a chrono DateTime<Utc> to UTC.
+    /// Convert a chrono `DateTime<Utc>` to UTC.
     pub fn datetime_to_utc(dt: &DateTime<Utc>) -> UTC {
         UTC::from_datetime(dt)
     }
 
-    /// Convert UTC to a chrono DateTime<Utc>.
+    /// Convert UTC to a chrono `DateTime<Utc>`.
     pub fn utc_to_datetime(utc: &UTC) -> DateTime<Utc> {
         utc.to_datetime()
     }
 
-    /// Convert a chrono DateTime<Utc> directly to TT.
+    /// Convert a chrono `DateTime<Utc>` directly to TT.
     pub fn datetime_to_tt(dt: &DateTime<Utc>) -> TT {
         let utc = UTC::from_datetime(dt);
         Self::utc_to_tt(&utc)
     }
 
-    /// Convert a chrono DateTime<Utc> directly to Julian Date.
+    /// Convert a chrono `DateTime<Utc>` directly to Julian Date.
     pub fn datetime_to_jd(dt: &DateTime<Utc>) -> JulianDate {
         let utc = UTC::from_datetime(dt);
         Self::utc_to_jd(&utc)
