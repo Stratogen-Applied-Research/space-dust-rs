@@ -11,7 +11,7 @@ repository = "https://github.com/Stratogen-Applied-Research/space_dust"
 documentation = "https://docs.rs/space-dust"
 keywords = ["astrodynamics", "satellite", "orbital-mechanics", "sgp4", "tle"]
 categories = ["science", "aerospace", "simulation"]
-authors = ["Stratogen Applied Research <contact@stratogen.com>"]
+authors = ["Stratogen Applied Research"]
 include = [
     "src/**/*",
     "tests/**/*",
